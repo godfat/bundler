@@ -79,7 +79,7 @@ module Bundler
       if path = self[:path]
         "#{path}/#{Bundler.ruby_scope}"
       else
-        Gem.dir
+        Gem.path.first
       end
     end
 
